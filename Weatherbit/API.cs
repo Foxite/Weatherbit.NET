@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Net;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Weatherbit {
-	internal abstract class API : IDisposable {
+	public abstract class API : IDisposable {
 		private readonly WebClient m_Web;
 		private readonly Uri m_BaseUri;
 		private readonly IDictionary<string, string> m_DefaultParameters;
